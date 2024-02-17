@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Raleway", sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner{
+    background: linear-gradient(to right, #0000005b, #6363633f) , url(./images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 34px;
+}
