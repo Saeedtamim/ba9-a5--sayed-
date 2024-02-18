@@ -17,3 +17,9 @@ body{
     background-position: center;
     border-radius: 34px;
 }
+.see-all-offers-btns{
+    transition: all 0.4s;
+}
+.see-all-offers-btns:hover{
+    background-color: #1dd1001c;
+}

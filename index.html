@@ -109,10 +109,11 @@
 
         <!-- Best offers for you section start -->
         <div class="mt-6 lg:mt-40 mx-4">
-            <h1 class="text-2xl lg:text-4xl font-extrabold text-black text-center py-6 lg:pb-16">Best offers for you</h1>
+            <h1 class="text-2xl lg:text-4xl font-extrabold text-black text-center py-6 lg:pb-16">Best offers for you
+            </h1>
             <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 py-6 justify-center items-center">
                 <!-- 15% Coupon Code -->
-                <div class="flex gap-4 lg:gap-10 bg-[#ffbf0f] justify-between items-center rounded-2xl">
+                <div class="flex gap-2 bg-[#ffbf0f] justify-evenly items-center rounded-2xl">
                     <div class=" p-4 lg:p-10">
                         <h1 class="text-[#352b11] text-xl font-extrabold lg:text-6xl pb-2">15% OFF</h1>
                         <h3 class="text-[#352b11] lg:text-xl font-semibold pb-2">on your next purchase</h3>
@@ -124,10 +125,10 @@
                     <div class="p-4 lg:p-10">
                         <h1 class="text-black text-xl font-extrabold lg:text-4xl pb-2">NEW15</h1>
                         <p class="lg:text-xl font-semibold pb-2">Coupon Code</p>
-                    </div>                   
+                    </div>
                 </div>
                 <!-- 20% Coupon Code -->
-                <div class="flex gap-4 lg:gap-10 bg-[#f78c9c] justify-between items-center rounded-2xl">
+                <div class="flex gap-2 bg-[#f78c9c] justify-between items-center rounded-2xl">
                     <div class=" p-4 lg:p-10">
                         <h1 class="text-[#352b11] text-xl font-extrabold lg:text-6xl pb-2">20% OFF</h1>
                         <h3 class="text-[#352b11] lg:text-xl font-semibold pb-2">on your next purchase</h3>
@@ -139,17 +140,16 @@
                     <div class="p-4 lg:p-10">
                         <h1 class="text-black text-xl font-extrabold lg:text-4xl pb-2">NEW20</h1>
                         <p class="lg:text-xl font-semibold pb-2">Coupon Code</p>
-                    </div>                   
+                    </div>
                 </div>
             </div>
             <div class="flex justify-center items-center py-4 lg:py-10">
-                <button class="px-4 py-2 lg:px-6 lg:py-3 flex gap-2 text-[#1dd100] border-[#1dd100] rounded-lg border-2 font-semibold text-sm lg:text-xl">See All Offers</button>
+                <button id="see-all-offers-btn"
+                    class="see-all-offers-btns px-4 py-2 lg:px-6 lg:py-3 flex gap-2 text-[#1dd100] border-[#1dd100] rounded-lg border-2 font-semibold text-sm lg:text-xl">See
+                    All Offers</button>
             </div>
         </div>
         <!-- Best offers for you section end -->
-
-        <!-- P.H Paribahan section start -->
-        <!-- P.H Paribahan section end -->
 
         <!-- Select Your Seat section start -->
         <!-- Select Your Seat section end -->
@@ -157,6 +157,60 @@
 
     </div>
     <!-- container end -->
+
+    <!-- P.H Paribahan section start -->
+    <div class="paribahan mt-4 lg:mt-20 py-6 lg:py-10 border-t-4 border-[#1dd100] rounded-xl bg-[#f7f8f8]">
+        <div class="container">
+            <div class="py-2 lg:py-6">
+                <h1 class="text-2xl lg:text-4xl font-extrabold text-black text-center py-4 lg:py-8 m-0">P.H Paribahan
+                </h1>
+                <p class="text-sm lg:text-lg w-9/12 m-auto text-center">To purchase tickets on the website, navigate to
+                    the desired event, select the number of tickets, provide required information, proceed to checkout,
+                    and complete payment securely.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-2 bg-white justify-stretch lg:justify-around rounded-2xl m-4">
+                <div class="lg:w-3/6 flex flex-col justify-center items-center gap-4 m-2 pt-6 lg:pt-2">
+                    <div class="w-11/12 flex justify-between">
+                        <div class="flex gap-4">
+                            <div><img src="./images/bus-logo.png" alt=""></div>
+                            <div>
+                                <h3 class="text-xl lg:text-3xl text-black font-bold">Greenline Paribahan</h3>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="px-4 py-2 lg:px-6 lg:py-3 flex gap-0 lg:gap-2 text-[#1dd100] bg-[#1dd1001c] border-[#1dd100] rounded-lg border-2 font-semibold text-sm lg:text-xl"><img src="./images/seat-green.png" alt=""> <span id="seat-left">40</span> Seats left</button>
+    
+                        </div>
+                    </div>
+                    <div class="bg-[#f7f8f8] px-6 rounded-2xl w-11/12">
+                        <div class="py-4 flex justify-between border-b-2 border-dashed border-gray-300">
+                            <p class="font-semibold text-gray-400">Route</p>
+                            <h4 class="text-black font-bold">Dhaka - Sylhet</h4>
+                        </div>
+                        <div class="py-4 flex justify-between border-b-2 border-dashed border-gray-300">
+                            <p class="font-semibold text-gray-400">Departure Time</p>
+                            <h4 class="text-black font-bold">9:00 PM</h4>
+                        </div>
+                        <div class="flex flex-col lg:flex-row justify-evenly items-center p-4 gap-2">
+                            <div><button class="px-2 py-1 lg:px-4 lg:py-3 bg-gray-300 text-gray-800 rounded-lg lg:font-semibold">Boarding Point - Laxmipur</button></div>
+                            <div><button class="px-2 py-1 lg:px-4 lg:py-3 bg-gray-300 text-gray-800 rounded-lg lg:font-semibold">Dropping Point - Bogura</button></div>
+                            <div><button class="px-2 py-1 lg:px-4 lg:py-3 bg-gray-300 text-gray-800 rounded-lg lg:font-semibold">Est. Time - 11 Hour</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rotate-90 lg:rotate-0 mt-6 lg:mt-0">
+                    <img src="./images/info-devider.png" alt="">
+                </div>
+                <div class="flex justify-center items-center px-2 lg:p-6 flex-col gap-2">
+                    <img src="./images/fare.png" alt="">
+                    <h3 id="per-seat-prices" class="text-xl lg:text-3xl font-extrabold text-black">550 Taka</h3>
+                    <p class="text-gray-700 font-bold text-lg lg:text-2xl">Per Seat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- P.H Paribahan section end -->
 
     <!-- Footer section start -->
     <!-- Footer section end -->
