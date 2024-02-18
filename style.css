@@ -23,3 +23,26 @@ body{
 .see-all-offers-btns:hover{
     background-color: #1dd1001c;
 }
+.font-inter{
+    font-family: "Inter", sans-serif;
+}
+.seat-btn{
+    font-family: "Inter", sans-serif;
+    padding: 0.8rem 1.2rem;
+    background: #d7d7d7;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+#seat-count{
+    background-color: #1dd100;
+    color: #fff;
+    padding: 0.1rem 0.8rem;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+li{
+    list-style: none;
+    display: flex;
+}
