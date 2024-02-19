@@ -17,8 +17,8 @@ for (const btn of allBtn) {
         count2 = count2 - 1;
 
         // seat-btn
-        const seatNumber = allBtn.innerText
-        console.log(seatNumber)
+        seatNumber = btn.innerText;
+        console.log(seatNumber);
 
         // All boolean
         btn.disabled = true;
