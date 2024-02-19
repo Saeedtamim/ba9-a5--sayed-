@@ -123,8 +123,7 @@ function clearSeatSelections() {
     applyBtnInputField.disabled = true;
     applyBtn.disabled = true;
     applyBtn.style.backgroundColor = '';
-    nextBtn.style.backgroundColor = ''; 
-    applyBtn.style.backgroundColor = ''; 
+    nextBtn.style.backgroundColor = '';  
 }
 
 function hidesuccesfullScreen() {
