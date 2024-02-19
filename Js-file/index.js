@@ -17,8 +17,8 @@ for (const btn of allBtn) {
         count2 = count2 - 1;
 
         // seat-btn
-        // const seatNumber = childNodes.innerText;
-        // console.log(seatNumber);
+        const seatNumber = allBtn.innerText
+        console.log(seatNumber)
 
         // All boolean
         btn.disabled = true;
@@ -28,7 +28,7 @@ for (const btn of allBtn) {
         // Click condition
         if (count > 4) {
 
-            alert('You can only book a of 4 tickets.')
+            alert('You can only booked 4 tickets.')
         }
         else {
             btn.classList.add('bg-colour');
@@ -45,7 +45,7 @@ for (const btn of allBtn) {
         if (count <= 4) {
 
             const item1 = document.createElement('li');
-            item1.textContent = 'A1';
+            item1.innerText = seatNumber;
     
             const item2 = document.createElement('li');
             item2.textContent = 'Economy';

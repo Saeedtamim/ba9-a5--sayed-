@@ -71,14 +71,15 @@
             <div class="banner relative mx-4">
                 <div class="flex flex-col justify-center items-center p-6 lg:h-[700px] gap-6">
                     <h1 class="text-white text-xl lg:text-6xl font-extrabold text-center">End-to-End Travel with
-                        <br><span class="text-[#1dd100]">Greenline Paribahan</span> </h1>
+                        <br><span class="text-[#1dd100]">Greenline Paribahan</span>
+                    </h1>
                     <p class="text-white text-sm lg:text-xl w-9/12 text-center">QuickBus: Your one-stop destination for
                         convenient and affordable bus tickets. Browse routes, compare prices, and book your journey
                         hassle-free. Travel smarter with QuickBus today</p>
                     <div>
-                        <button
-                            class="text-sm lg:text-2xl text-black px-4 py-2 lg:px-6 lg:py-4 font-bold bg-[#1dd100] rounded-md">Buy
-                            Tickets</button>
+
+                        <a href="#tecket-selection" class="text-sm lg:text-2xl text-black px-4 py-2 lg:px-6 lg:py-4 font-bold bg-[#1dd100] rounded-md">Buy
+                            Tickets</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +150,7 @@
                     </div>
                 </div>
                 <div class="flex justify-center items-center py-4 lg:py-10">
-                    <a href="#tecket-selection"
+                    <a
                         class="see-all-offers-btns px-2 py-1 lg:px-6 lg:py-3 flex gap-2 text-[#1dd100] border-[#1dd100] rounded-lg border-2 font-semibold text-sm lg:text-xl">See
                         All Offers</a>
 
@@ -176,7 +177,7 @@
                 </div>
                 <div class="flex flex-col lg:flex-row gap-2 bg-white justify-stretch lg:justify-around rounded-2xl m-4">
                     <div class="lg:w-3/6 flex flex-col justify-center items-center gap-4 m-2 pt-6 lg:pt-2">
-                        <div class="w-11/12 flex justify-between">
+                        <div class="w-11/12 flex gap-4 flex-col lg:flex-row justify-between">
                             <div class="flex gap-2 lg:gap-4">
                                 <div><img src="./images/bus-logo.png" alt=""></div>
                                 <div>
@@ -231,7 +232,7 @@
         <!-- ticket selected -->
         <div id="tecket-selection" class="bg-[#f7f8f8] p-4">
             <div class="container">
-                <div class="flex flex-col lg:flex-row bg-white rounded-xl p-4 mx-4">
+                <div class="flex flex-col lg:flex-row bg-white rounded-xl p-4">
                     <!-- select seat -->
                     <div class="lg:w-[58%] border-r-4 birder-r-4 border-dashed border-gray-300 px-6 py-4">
                         <h3
@@ -317,20 +318,24 @@
                         </div>
                     </div>
                     <!-- totala amount -->
-                    <div class="lg:w-[40%] px-6 lg:ml-6 py-4">
+                    <div class="lg:w-[40%] px-6 lg:ml-6 py-2">
                         <h3
                             class="text-black font-bold text-xl lg:text-2xl pb-4 border-gray-400 border-b-2 border-dashed">
                             Select Your Seat</h3>
 
-                        <div class="flex flex-col bg-[#f7f8f8] my-2 p-2 rounded-2xl px-4">
-                            <div class="grid grid-cols-3 justify-between items-center mt-4">
+                        <div class="flex flex-col bg-[#f7f8f8] my-2 p-2 rounded-2xl">
+                            <div class="grid grid-cols-3 mt-4">
+
                                 <h4 class="text-black font-bold">Seat<span id="seat-count">0</span></h4>
                                 <h4 class="text-black font-bold">Class</h4>
                                 <h4 class="text-black font-bold">Price</h4>
-                                <ul id="selected-id-container"
-                                    class="selected-class-container font-inter grid grid-cols-3 justify-between items-center gap-x-28 py-2">
-                                </ul>
+
                             </div>
+                            <ul id="selected-id-container"
+                                class="selected-class-container font-inter grid grid-cols-3 py-2">
+                            </ul>
+
+
                             <div class="flex justify-between items-center border-t-2 border-gray-300 my-6 py-4 px-4">
                                 <h3 class="total text-black font-bold">Total Price</h3>
                                 <h3 class="total font-inter text-black font-bold">BDT <span id="total-amount">0</span>
@@ -364,8 +369,8 @@
                                 class="border-2 border-gray-300 w-full rounded-xl p-4">
                         </div>
                         <button id="next-btn"
-                            class="bg-[#1dd100] text-lg lg:text-xl font-bold text-white py-4 w-full rounded-xl" onclick="hidHomeScreen()"
-                            disabled>Next</button>
+                            class="bg-[#1dd100] text-lg lg:text-xl font-bold text-white py-4 w-full rounded-xl"
+                            onclick="hidHomeScreen()" disabled>Next</button>
                         <div class="flex gap-4 lg:gap-8 justify-center py-4">
                             <button class="border-b-2 border-gray-300">Terms and Conditions</button>
                             <button class="border-b-2 border-gray-300">Cancellation Policy</button>
@@ -388,7 +393,7 @@
                     </div>
                     <div class="flex flex-col justify-center">
                         <h3 class="text-white font-bold text-lg lg:text-2xl pb-4">Download our app</h3>
-                        <img src="./images/playstore-2.png" alt="">
+                        <div><img src="./images/playstore-2.png" alt=""></div>
                     </div>
                 </div>
                 <div class="pt-4 lg:pt-10 flex flex-col lg:flex-row justify-between mx-4 gap-4 lg:gap-0">
@@ -410,7 +415,7 @@
 
 
     <!-- Succesfull -->
-    <div id="succesfull"  class="hidden min-h-screen flex justify-center items-center bg-[#f2f1f1]">
+    <div id="succesfull" class="hidden min-h-screen flex justify-center items-center bg-[#f2f1f1]">
         <div class="w-5/12 p-10 mx-auto bg-white rounded-2xl flex flex-col gap-2 justify-center items-center">
             <img src="./images/success.png" alt="">
             <h3 class="text-[#27ae60] font-bold">SUCCESS</h3>
@@ -419,7 +424,8 @@
             <p>Shortly you will find a confirmation in your email.</p>
             <div class="mt-4">
                 <button id="continue"
-                    class="bg-[#27ae60] text-lg lgtext-2xl px-3 py-2 lg:px-20 rounded-2xl lg:py-4 font-bold text-white" onclick="hidesuccesfullScreen()">Continue</button>
+                    class="bg-[#27ae60] text-lg lgtext-2xl px-3 py-2 lg:px-20 rounded-2xl lg:py-4 font-bold text-white"
+                    onclick="hidesuccesfullScreen()">Continue</button>
             </div>
         </div>
     </div>
