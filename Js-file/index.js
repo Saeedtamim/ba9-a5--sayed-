@@ -38,7 +38,7 @@ for (const btn of allBtn) {
 
         if (count >= 4) {
             applyBtnInputField.disabled = false;
-            applyBtn.disabled =false;
+            applyBtn.disabled = false;
             applyBtn.style.backgroundColor = '#1dd100';
         }
 
@@ -66,9 +66,6 @@ for (const btn of allBtn) {
             const sum = converTotalPrices + parseInt(price);
             setInnerText('total-amount', sum);
         }
-
-
-        
         nextBtn.style.backgroundColor = '#1dd100';
 
     })
@@ -109,11 +106,31 @@ function hidHomeScreen() {
     succesfullScreen.classList.remove('hidden')
 
 }
+
+// clear all previous data
+function clearSeatSelections() {
+    for (let i = 0; i < allBtn.length; i++) {
+        allBtn[i].classList.remove('bg-colour');
+        allBtn[i].disabled = false;
+    }
+    count = 0;
+    count2 = 40;
+    list.innerHTML = '';
+    setInnerText('seat-count', 0);
+    setInnerText('seat-left', 40);
+    setInnerText('total-amount', 0);
+    setInnerText('grand-total-amount', 0);
+    applyBtnInputField.value = '';
+    applyBtnInputField.disabled = true;
+    applyBtn.disabled = true;
+    applyBtn.style.backgroundColor = '';
+}
 function hidesuccesfullScreen() {
     const succesfullScreen = document.getElementById('succesfull');
-    succesfullScreen.classList.add('hidden')
+    succesfullScreen.classList.add('hidden');
     const homeScreen = document.getElementById('home-screen');
-    homeScreen.classList.remove('hidden')
+    homeScreen.classList.remove('hidden');
+    clearSeatSelections();
 }
 
 
