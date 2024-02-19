@@ -33,6 +33,7 @@ body{
     border-radius: 8px;
     font-weight: 600;
     color: #4f4f4f;
+    transition: all 0.3s;
 }
 .seat-btns{
     font-family: "Inter", sans-serif;
@@ -41,6 +42,7 @@ body{
     border-radius: 8px;
     font-weight: 600;
     color: #4f4f4f;
+    transition: all 0.3s;
 }
 #seat-count{
     background-color: #1dd100;
