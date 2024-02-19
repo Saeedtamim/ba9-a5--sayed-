@@ -86,7 +86,7 @@ applyBtn.addEventListener('click', function (e) {
     }
 
     // For 20% discount
-    else if (applyBtnInput.value === 'NEW20') {
+    else if (applyBtnInput.value === 'Couple 20') {
         let totalMainPrice = parseInt(document.getElementById('total-amount').innerText);
         let twentyPercent = totalMainPrice * 0.20;
         let result = totalMainPrice - twentyPercent;
@@ -97,42 +97,6 @@ applyBtn.addEventListener('click', function (e) {
     }
 })
 
-function hidHomeScreen() {
-    const homeScreen = document.getElementById('home-screen');
-    homeScreen.classList.add('hidden');
-    const succesfullScreen = document.getElementById('succesfull');
-    succesfullScreen.classList.remove('hidden')
-
-}
-
-// clear all previous data
-function clearSeatSelections() {
-    for (let i = 0; i < allBtn.length; i++) {
-        allBtn[i].classList.remove('bg-colour');
-        allBtn[i].disabled = false;
-    }
-    count = 0;
-    count2 = 40;
-    list.innerHTML = '';
-    setInnerText('seat-count', 0);
-    setInnerText('seat-left', 40);
-    setInnerText('total-amount', 0);
-    setInnerText('grand-total-amount', 0);
-    inputFields2.classList.remove('hidden')
-    applyBtnInputField.value = '';
-    applyBtnInputField.disabled = true;
-    applyBtn.disabled = true;
-    applyBtn.style.backgroundColor = '';
-    nextBtn.style.backgroundColor = '';  
-}
-
-function hidesuccesfullScreen() {
-    const succesfullScreen = document.getElementById('succesfull');
-    succesfullScreen.classList.add('hidden');
-    const homeScreen = document.getElementById('home-screen');
-    homeScreen.classList.remove('hidden');
-    clearSeatSelections();
-}
 
 
 
