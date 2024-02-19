@@ -63,6 +63,13 @@ for (const btn of allBtn) {
             const converTotalPrices = parseInt(totalPrices);
             const sum = converTotalPrices + parseInt(price);
             setInnerText('total-amount', sum);
+
+            //Grand Total BDT
+            const granPdrice = document.getElementById('amount-prices').innerText
+            const granPdriceTotal = document.getElementById('grand-total-amount').innerText
+            const grandConverTotalPrices = parseInt(granPdriceTotal);
+            const sum2 = grandConverTotalPrices + parseInt(price);
+            setInnerText('grand-total-amount', sum2);
         }
         nextBtn.style.backgroundColor = '#1dd100';
 
