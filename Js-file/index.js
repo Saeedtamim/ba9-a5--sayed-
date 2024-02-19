@@ -23,7 +23,7 @@ for (const btn of allBtn) {
         // All boolean
         btn.disabled = true;
         nextBtn.disabled = false;
-        applyBtnInputField.disabled = true ;
+        applyBtnInputField.disabled = true;
 
         // Click condition
         if (count > 4) {
@@ -36,20 +36,22 @@ for (const btn of allBtn) {
             setInnerText('seat-left', count2);
         }
 
-        if( count >= 4){
+        if (count >= 4) {
             applyBtnInputField.disabled = false;
+            applyBtn.disabled =false;
+            applyBtn.style.backgroundColor = '#1dd100';
         }
 
-       
+
 
         if (count <= 4) {
 
             const item1 = document.createElement('li');
             item1.innerText = seatNumber;
-    
+
             const item2 = document.createElement('li');
             item2.textContent = 'Economy';
-    
+
             const item3 = document.createElement('li');
             item3.textContent = '550';
 
@@ -64,9 +66,10 @@ for (const btn of allBtn) {
             const sum = converTotalPrices + parseInt(price);
             setInnerText('total-amount', sum);
         }
-       
+
 
         
+        nextBtn.style.backgroundColor = '#1dd100';
 
     })
 }
@@ -99,14 +102,14 @@ applyBtn.addEventListener('click', function (e) {
     }
 })
 
-function hidHomeScreen(){
+function hidHomeScreen() {
     const homeScreen = document.getElementById('home-screen');
     homeScreen.classList.add('hidden');
     const succesfullScreen = document.getElementById('succesfull');
     succesfullScreen.classList.remove('hidden')
 
 }
-function hidesuccesfullScreen(){
+function hidesuccesfullScreen() {
     const succesfullScreen = document.getElementById('succesfull');
     succesfullScreen.classList.add('hidden')
     const homeScreen = document.getElementById('home-screen');

@@ -58,6 +58,6 @@ li{
     color: #fff;
     font-weight: 700;
 }
-.disabled {
-    pointer-events: none;
+.disabled-btn {
+    background-color: gray;
 }
