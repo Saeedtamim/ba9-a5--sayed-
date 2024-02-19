@@ -104,6 +104,9 @@ applyBtn.addEventListener('click', function (e) {
     }
 })
 
+function resetAll() {
+    window.location.reload();
+  }
 
 
 
