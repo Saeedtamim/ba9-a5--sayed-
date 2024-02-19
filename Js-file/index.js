@@ -42,8 +42,6 @@ for (const btn of allBtn) {
             applyBtn.style.backgroundColor = '#1dd100';
         }
 
-
-
         if (count <= 4) {
 
             const item1 = document.createElement('li');
@@ -120,11 +118,15 @@ function clearSeatSelections() {
     setInnerText('seat-left', 40);
     setInnerText('total-amount', 0);
     setInnerText('grand-total-amount', 0);
+    inputFields2.classList.remove('hidden')
     applyBtnInputField.value = '';
     applyBtnInputField.disabled = true;
     applyBtn.disabled = true;
     applyBtn.style.backgroundColor = '';
+    nextBtn.style.backgroundColor = ''; 
+    applyBtn.style.backgroundColor = ''; 
 }
+
 function hidesuccesfullScreen() {
     const succesfullScreen = document.getElementById('succesfull');
     succesfullScreen.classList.add('hidden');
